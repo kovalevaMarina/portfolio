@@ -2,6 +2,33 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+.white {
+  background-color: #F3F2F0;
+  color: #010101;
+}
+
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #010101;
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  color: #D40000;
+}
+
+.photo {
+  width: 100%;
+  margin-bottom: 120px;
+}
+
 .name {
   font-size: 24px;
 }
