@@ -296,6 +296,22 @@ header {
   padding-top: 107px;
 }
 
+.circle-tarif {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  left: -82px;
+  top: calc(50% - 70px);
+}
+
+.circle-price {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  left: -46px;
+  top: calc(50% - 45px);
+}
+
 .about {
   display: grid;
   grid-template: 290px / repeat(4, 1fr);
@@ -478,7 +494,7 @@ header {
 
 .section-advantages {
   padding-top: 152px;
-  padding-bottom: 100px;
+  padding-bottom: 183px;
 }
 
 .advantages-text {
@@ -585,13 +601,23 @@ header {
   border-bottom: 10px solid #E31B1B;
 }
 
+.section-tarif {
+  padding-top: 150px;
+}
+
 .tarif {
   display: grid;
-  grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
 }
 
 .tarif-item {
   border-bottom: 1px solid #010101;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 268px;
+  padding-top: 33px;
+  padding-bottom: 62px;
 }
 
 .tarif-title {
@@ -599,17 +625,31 @@ header {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  border-bottom: 1px solid #010101;
+  padding-top: 5px;
+}
+
+.tarif-title > div {
+  position: relative;
+}
+
+.tarif-title p {
+  position: relative;
+  z-index: 1;
 }
 
 .tarif-description {
   font-size: 28px;
   line-height: 150%;
   opacity: 0.8;
+  border-bottom: 1px solid #010101;
+  padding-bottom: 52px;
 }
 
 .tarif-name {
   font-size: 28px;
   line-height: 150%;
+  margin-bottom: 20px;
 }
 
 .tarif-text {
@@ -626,18 +666,20 @@ header {
   font-size: 16px;
   line-height: 150%;
   font-weight: 700;
+  margin-bottom: 27px;
 }
 
 .tarif-list {
   list-style-type: none;
   padding-left: 0;
   margin: 0;
+  font-size: 16px;
 }
 
 .tarif-list-item {
   position: relative;
   padding-left: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .tarif-list-item::before {
@@ -658,3 +700,12 @@ header {
   line-height: 150%;
 }
 
+.tarif-footer {
+  position: relative;
+}
+
+.tarif-footer p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
