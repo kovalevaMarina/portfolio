@@ -284,6 +284,12 @@ header {
   z-index: 2;
 }
 
+.triangle-form {
+  position: absolute;
+  left: -177px;
+  top: 51px;
+}
+
 .circle-nav {
   width: 106px;
   height: 106px;
@@ -310,6 +316,14 @@ header {
   position: absolute;
   left: -46px;
   top: calc(50% - 45px);
+}
+
+.circle-form {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: -151px;
+  top: 0;
 }
 
 .about {
@@ -708,4 +722,151 @@ header {
   position: relative;
   z-index: 1;
   margin: 0;
+}
+
+.section-form {
+  padding-top: 90px;
+  padding-bottom: 130px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 12px;
+  line-height: 150%;
+  position: relative;
+}
+
+.form-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #010101;
+  position: relative;
+  z-index: 1;
+}
+
+.form-description {
+  font-size: 28px;
+  line-height: 150%;
+  border-bottom: 1px solid #010101;
+  padding-bottom: 34px;
+}
+
+.form-item {
+  padding-top: 60px;
+}
+
+.form-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.form-social .nav-social {
+  margin-bottom: 2px;
+}
+
+.form-social .nav-item:first-child {
+  padding-left: 0;
+}
+
+form label {
+  opacity: 0.8;
+  margin-bottom: 10px;
+  display: block;
+}
+
+form input {
+  width: 100%;
+  padding: 26px 28px 26px;
+  background-color: #E7E6E4;
+  border: none;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  color: #010101;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form input[type=submit] {
+  background-color: #D40000;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 700;
+  padding: 21px 0px;
+  margin-bottom: 0;
+}
+
+form select {
+  width: 100%;
+}
+
+.ui-selectmenu-menu .ui-menu {
+  background-color: #E7E6E4;
+  color: rgba(1, 1, 1, 0.4);
+  font-size: 12px;
+}
+
+.ui-selectmenu-menu .ui-menu .ui-menu-item {
+  padding: 10px 20px;
+}
+
+.ui-selectmenu-menu .ui-menu .ui-menu-item:hover {
+  color: #010101;
+}
+
+.ui-selectmenu-button.ui-button {
+  width: 100%;
+  background-color: #E7E6E4;
+  color: #010101;
+  padding: 25px 20px 25px;
+  box-sizing: border-box;
+  margin-bottom: 37px;
+  border-radius: 0;
+}
+
+.ui-button:hover,
+.ui-button:focus {
+  border: none;
+  outline: none;
+}
+
+footer {
+  border-top: 1px solid #010101;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 65px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 41px;
+  padding-bottom: 42px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: rgba(1, 1, 1, 0.3);
+}
+
+.footer-link {
+  color: rgba(1, 1, 1, 0.3);
+  border-bottom: 1px solid rgba(1, 1, 1, 0.3);
+  transition: 0.2s ease;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: rgba(1, 1, 1, 1);
+  border-bottom: 1px solid rgba(1, 1, 1, 1);
 }
